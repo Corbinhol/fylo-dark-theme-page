@@ -245,3 +245,55 @@ body {
 .reviews .reviewer .reviewer-name .name{
     font-weight: 800;
 }
+
+.email {
+    width: 65%;
+    background-color:hsl(222, 33%, 22%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+
+    box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.45);
+-webkit-box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.45);
+-moz-box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.45);
+    
+}
+
+.email h1 {
+    margin-bottom: .5em;
+}
+
+.email p {
+    width: 75ch;
+}
+
+.email .email-input-form {
+    margin: 1em 0;
+    color:hsl(216, 53%, 9%);
+    padding: .6em 1.6em;
+    font-size: 1.4em;
+    width: 35ch;
+    border-radius: 5em;
+    border: none;
+}
+
+.email .email-submit-button {
+    background-color: hsl(198, 75%, 58%);
+    border: none;
+    font-size: 1em;
+    font-weight: 800;
+    padding: 1em;
+    border-radius: 5em;
+    margin-left: 2em;
+    transition: background-color .3s, color .3s;
+
+
+}
+
+.email .email-submit-button:hover {
+    transition: .3s;
+    background-color: hsl(198, 81%, 77%);
+    color: rgb(88, 88, 88);
+}
