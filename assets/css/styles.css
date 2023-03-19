@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+    --main-text-color: white;
+
+    --first-section-background: hsl(218, 28%, 13%);
+    --second-section-background: hsl(218, 28%, 13%);
+    --third-section-background: hsl(216, 53%, 9%);
+    --testimonial-panel-background: hsl(219, 30%, 18%);
+    color: var(--main-text-color)
+}
+
+svg {
+    width: 1.3em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body {
+    background-color: var(--second-section-background);
+}
