@@ -199,6 +199,16 @@ body {
     justify-content: center;
 }
 
+@keyframes animate-up {
+    from {bottom: 0em;}
+    to {bottom: 1em;}
+}
+
+@keyframes animate-down {
+    from {bottom: 1em;}
+    to {bottom: 0em;}
+}
+
 .reviews .review {
     padding: 2em 2em;
     background-color: var(--testimonial-panel-background);
@@ -206,9 +216,15 @@ body {
     flex-direction: column;
     justify-content: center;
 
+    position: relative;
+
     --webkit-box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
     -moz-box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
     box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
+
+    animation-name: animate-down;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 .reviews .background-quote {
@@ -219,12 +235,17 @@ body {
     z-index: -1;
 }
 
+
 .reviews .review:hover {
     transition: .3s;
     -webkit-box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49);
     -moz-box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49);
     box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49); 
+    animation-name: animate-up;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
+
 
 .reviews .review p {
     font-size: 1rem;
@@ -288,8 +309,6 @@ body {
     border-radius: 5em;
     margin-left: 2em;
     transition: background-color .3s, color .3s;
-
-
 }
 
 .email .email-submit-button:hover {
