@@ -79,7 +79,7 @@ main {
 .first-section a {
     padding: 1.3em 6em;
     margin: 3em;
-    background-color: hsl(198, 60%, 50%);
+    background-color: #339ecc;
     border-radius: 3em;
 }
 
@@ -104,12 +104,21 @@ body {
     gap: 5em 5em;
 }
 
+
+
 .features .feature-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1em;
+    border-radius: 1.5em;
+}
+
+.feature-section:hover {
+    transition: .5s;
+    background-color: hsla(0, 0%, 100%, 5%);
 }
 
 .features .feature-section img {
@@ -125,4 +134,114 @@ body {
 
 .features .feature-section p {
     padding: 1em;
+}
+
+.infogram {
+    display: flex;
+    align-items: center;
+    padding: 6em;
+}
+
+.infogram img {
+    width: 50%;
+}
+
+.infogram .text-section {
+    max-width: 75ch;
+    padding: 6em;
+}
+
+.infogram .text-section h2 {
+    font-size: 2.5em;
+    width: 50%;
+    margin: 1em 0em;
+}
+
+.infogram .text-section p {
+    margin: 1em 0;
+    max-width: 75ch;
+}
+
+.infogram .text-section a {
+    color: hsl(198, 75%, 58%);
+    display: flex;
+    padding-bottom: .2em;
+    border-bottom: 1px solid hsl(198, 75%, 58%);
+}
+
+.infogram .text-section .link {
+    display: flex;
+    align-items: center;
+}
+
+.infogram .text-section .link img {
+    width: 1.2em;
+    margin-left: .4em;;
+}
+
+.infogram .text-section a:hover {
+    transition: .3s;
+    color: hsl(198, 100%, 75%);
+    border-bottom: 1px solid hsl(198, 100%, 75%);
+}
+
+.reviews-container {
+    
+}
+
+.reviews {
+    position: relative;
+    display: grid;
+    width: 75%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em;
+    margin: 8em 0;
+    justify-content: center;
+}
+
+.reviews .review {
+    padding: 2em 2em;
+    background-color: var(--testimonial-panel-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    --webkit-box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
+    -moz-box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
+    box-shadow: 0px 0px 30px -7px rgba(51,158,204,0.23);
+}
+
+.reviews .background-quote {
+    position: absolute;
+    top: -3.5em;
+    left: -.5em;
+    width: 5em;
+    z-index: -1;
+}
+
+.reviews .review:hover {
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49);
+    -moz-box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49);
+    box-shadow: 0px 0px 28px 8px rgba(51,158,204,0.49); 
+}
+
+.reviews .review p {
+    font-size: 1rem;
+}
+
+.reviews .reviewer img {
+    height: fit-content;
+    width: 2.5em;
+    border-radius: 5em;
+    margin-right: 1em;
+}
+
+.reviews .reviewer {
+    display: flex;
+    margin-top: 1.7em;
+}
+
+.reviews .reviewer .reviewer-name .name{
+    font-weight: 800;
 }
