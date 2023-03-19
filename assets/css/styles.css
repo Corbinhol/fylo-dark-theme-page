@@ -20,9 +20,109 @@ svg {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin: 3em 3em;
+}
+
+header .header-links {
+    margin-right: 3em;
+}
+
+header .header-links a {
+    padding: 1em;
+    font-size: 1.2rem;
+    opacity: 65%
+}
+
+header .header-links a:hover {
+    transition: .3s;
+    opacity: 100%
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.main-preview-image {
+    width: 55%
+}
+
+.first-section h1 {
+    width: 60%;
+    text-align: center;
+    margin: 1em 0 .5em 0;
+}
+
+.first-section p {
+    max-width: 45%;
+    text-align: center;
+}
+
+.first-section a {
+    padding: 1.3em 6em;
+    margin: 3em;
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 3em;
+}
+
+.first-section a:hover {
+    transition: .5s;
+    background-color: hsl(198, 75%, 58%);
+}
+
+h1 {
+    font-size: 2.3rem;
 }
 
 body {
     background-color: var(--second-section-background);
+}
+
+.features {
+    display: grid;
+    width: 65%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em 5em;
+}
+
+.features .feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.features .feature-section img {
+    width: 5em;
+    margin-bottom: 2em;
+}
+
+.features .feature-section img#shield {
+    width: 4.5em;
+    margin-bottom: 2em;
+}
+
+
+.features .feature-section p {
+    padding: 1em;
 }
