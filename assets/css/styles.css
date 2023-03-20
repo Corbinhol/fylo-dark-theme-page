@@ -285,6 +285,7 @@ body {
     -moz-box-shadow: 10px 10px 15px -7px rgba(0,0,0,0.45);
 
     border-radius: 1em;
+    margin-bottom: 5em;
     
 }
 
@@ -323,8 +324,95 @@ body {
     color: rgb(88, 88, 88);
 }
 
-footer .footer-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr
+footer {
+    margin-bottom: 2em;;
 }
 
+footer .company-logo-footer {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+footer .footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr .4fr .4fr 1fr;
+    margin-top: 2em;
+}
+
+footer svg {
+    fill: white;
+    width: .8em;
+}
+
+footer .footer-info .location-section {
+    display: flex;
+    margin-left: 4em;
+    /* align-items: center; */
+}
+
+footer .location-section p {
+    max-width: 75%;
+    margin-left: 1em;
+    font-size: 1.3em
+}
+
+footer .footer-info a {
+    font-size: 1.3em;
+    margin: .2em 0;
+}
+
+footer .location-section svg {
+    margin-top: .3em;
+}
+
+footer .contact-section * {
+    display: flex;
+}
+
+footer .contact-section p {
+    margin: 0 0 .3em .9em;
+}
+
+footer .menu-options {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: end;
+    padding-right: 3.5em;
+}
+
+footer .socials svg {
+    width: 2em;
+}
+
+footer .socials .instagram {
+    width: 1.9em;
+}
+
+footer .socials a {
+    border: 1px solid white;
+    border-radius: 5em;
+    width: 2em;
+    height: 2em;
+    padding: .6em;
+    display: flex;
+    margin: 0 .3em;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .header-links {
+        margin: 0 0 5em 0;
+    }
+
+    header .header-links a {
+        font-size: 2em;
+    }
+}
