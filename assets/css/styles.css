@@ -294,7 +294,8 @@ body {
 }
 
 .email p {
-    width: 75ch;
+    width: 85%;
+    max-width: 75ch;
 }
 
 .email .email-input-form {
